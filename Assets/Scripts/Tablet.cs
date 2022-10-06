@@ -17,7 +17,7 @@ public class Tablet : MonoBehaviour
         Vector3 lTouchPos = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
         Quaternion lTouchRot = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
 
-        transform.localPosition = lTouchPos;
+        transform.localPosition = lTouchPos + transform.right * 0.27f + transform.forward * -0.13f;
         transform.localRotation = lTouchRot;
     }
 }

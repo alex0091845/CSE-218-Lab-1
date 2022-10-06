@@ -47,8 +47,8 @@ public class Draw : MonoBehaviour
             // {
                 if (OVRInput.Get(OVRInput.RawButton.X))
                 {
-                    drawAt(penTip.GetcollisionCoords());
-                    Debug.Log(penTip.GetcollisionCoords());
+                    // drawAt(penTip.GetcollisionCoords());
+                    // Debug.Log(penTip.GetcollisionCoords());
                 }
             if (count % 24 == 0) {
                 LineRenderer lr = GetComponent<LineRenderer>();
